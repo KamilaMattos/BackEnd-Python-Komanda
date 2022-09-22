@@ -10,7 +10,7 @@ def get_item_menu(path: str, id_item_table: int):
             return items
 
 
-def calculate_tab(path: str, table: list[dict]) -> dict:
+def calculate_tab(table: list[dict], path: str) -> dict:
     date_time_formated = '%d/%m/%Y, %H:%M:%S'
     subtotal = 0
 
