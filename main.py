@@ -13,8 +13,8 @@ def main():
         {"id": 21, "amount": 5},
     ]
 
-    # return calculate_tab('menu.json', table_1)
-    return calculate_tab('menu.json', table_2)
+    return calculate_tab('menu.json', table_1)
+    # return calculate_tab('menu.json', table_2)
 
 
 if __name__ == "__main__":
