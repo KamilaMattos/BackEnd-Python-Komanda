@@ -1,4 +1,3 @@
-from datetime import datetime
 from utils.json_handler import read_json
 
 
