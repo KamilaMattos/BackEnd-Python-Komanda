@@ -1,3 +1,4 @@
+from datetime import datetime
 from utils.json_handler import read_json
 
 
@@ -11,6 +12,7 @@ def get_item_menu(filepath: str, id_item_table: int):
 
 def calculate_tab(table: list[dict]) -> dict:
     filepath = 'menu.json'
+    # date_time_formated = '%d/%m/%Y, %H:%M:%S'
     date_time = '11/10/2011 12:00:00'
     subtotal = 0
 
@@ -23,4 +25,5 @@ def calculate_tab(table: list[dict]) -> dict:
         subtotal += price * amount
 
     return {'subtotal': subtotal,
+            # 'created_at': datetime.now().strftime(date_time_formated)}
             'created_at': date_time}
