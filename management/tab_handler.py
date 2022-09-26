@@ -12,7 +12,7 @@ def get_item_menu(filepath: str, id_item_table: int):
 
 def calculate_tab(table: list[dict]) -> dict:
     filepath = 'menu.json'
-    date_time_formated = '%d/%m/%Y, %H:%M:%S'
+    date_time_formated = '%d/%m/%Y %H:%M:%S'
     subtotal = 0
 
     for items in table:
